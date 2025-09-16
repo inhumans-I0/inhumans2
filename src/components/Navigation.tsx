@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Bot, Sparkles } from "lucide-react";
+import { Menu, X, Puzzle, Sparkles } from "lucide-react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +14,9 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="flex items-center justify-center w-8 h-8 bg-gradient-primary rounded-lg">
-              <Bot className="w-5 h-5 text-primary-foreground" />
+              <Puzzle className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-gradient-primary">AgentHub</span>
+            <span className="text-xl font-bold text-gradient-primary">Inhumans</span>
           </div>
 
           {/* Desktop Navigation */}

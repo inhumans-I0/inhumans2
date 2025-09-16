@@ -52,7 +52,7 @@ const HowItWorks = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            How <span className="text-gradient-primary">AgentHub</span> Works
+            How <span className="text-gradient-primary">Inhumans</span> Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Whether you're adopting AI solutions or monetizing your expertise, 

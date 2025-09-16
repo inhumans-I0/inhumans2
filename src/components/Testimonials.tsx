@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star, Quote, Shield, Lock, Headphones, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
@@ -8,9 +8,9 @@ const testimonials = [
     name: "Sarah Chen",
     role: "Freelance Marketing Consultant",
     company: "SarahChen Digital",
-    avatar: "👩‍💼",
+    avatar: "/placeholder.svg",
     rating: 5,
-    quote: "AgentHub transformed my business overnight. The ContentGenius AI helped me scale from 5 to 25 clients in just 3 months. The quality is incredible and my clients love the fast turnaround.",
+    quote: "Inhumans transformed my business overnight. The ContentGenius AI helped me scale from 5 to 25 clients in just 3 months. The quality is incredible and my clients love the fast turnaround.",
     results: "5x client growth in 3 months"
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     name: "Marcus Rodriguez",
     role: "CEO",
     company: "TechFlow Solutions",
-    avatar: "👨‍💻", 
+    avatar: "/placeholder.svg", 
     rating: 5,
     quote: "Our customer service costs dropped by 60% after implementing CustomerCare Pro. The AI handles 80% of inquiries automatically, and our team can focus on complex issues.",
     results: "60% cost reduction"
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Dr. Emily Watson",
     role: "AI Researcher & Agent Creator",
     company: "WatsonAI Labs",
-    avatar: "👩‍🔬",
+    avatar: "/placeholder.svg",
     rating: 5,
     quote: "I've earned over $30K in the first 6 months hosting my financial analysis agent. The platform handles everything - payments, support, marketing. I just focus on improving my AI.",
     results: "$30K+ earnings in 6 months"
@@ -38,7 +38,7 @@ const testimonials = [
     name: "Ahmed Hassan",
     role: "Operations Manager",
     company: "GrowthCorp MSME",
-    avatar: "👨‍💼",
+    avatar: "/placeholder.svg",
     rating: 5,
     quote: "DataVision Analytics gave us enterprise-level insights at a fraction of the cost. We've optimized our supply chain and increased efficiency by 45%. Game-changing investment.",
     results: "45% efficiency increase"
@@ -48,7 +48,7 @@ const testimonials = [
     name: "Lisa Park",
     role: "E-commerce Entrepreneur", 
     company: "StyleHub Online",
-    avatar: "👩‍💼",
+    avatar: "/placeholder.svg",
     rating: 5,
     quote: "MarketMaster completely automated our social media and email campaigns. Sales increased 200% while we reduced marketing workload by 70%. Absolutely revolutionary.",
     results: "200% sales increase"
@@ -56,10 +56,10 @@ const testimonials = [
 ];
 
 const trustBadges = [
-  { name: "SOC 2 Certified", icon: "🔐" },
-  { name: "GDPR Compliant", icon: "🛡️" },
-  { name: "Enterprise Security", icon: "⭐" },
-  { name: "24/7 Support", icon: "🚀" }
+  { name: "SOC 2 Certified", icon: Lock },
+  { name: "GDPR Compliant", icon: Shield },
+  { name: "Enterprise Security", icon: Lock },
+  { name: "24/7 Support", icon: Headphones }
 ];
 
 const Testimonials = () => {
@@ -84,7 +84,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Join thousands of businesses and creators who've transformed their operations 
-            and unlocked new revenue streams with AgentHub.
+            and unlocked new revenue streams with Inhumans.
           </p>
         </div>
 
@@ -150,7 +150,13 @@ const Testimonials = () => {
             </blockquote>
 
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="text-4xl">{current.avatar}</div>
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <div className="text-lg font-bold text-primary-foreground">
+                    {current.name.split(' ').map(n => n[0]).join('')}
+                  </div>
+                </div>
+              </div>
               <div className="text-left">
                 <div className="font-semibold text-lg">{current.name}</div>
                 <div className="text-muted-foreground">{current.role}</div>
@@ -171,12 +177,15 @@ const Testimonials = () => {
 
         {/* Trust Badges */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {trustBadges.map((badge, index) => (
-            <div key={index} className="flex items-center justify-center gap-3 p-4 bg-muted/50 rounded-xl">
-              <span className="text-2xl">{badge.icon}</span>
-              <span className="text-sm font-medium text-muted-foreground">{badge.name}</span>
-            </div>
-          ))}
+          {trustBadges.map((badge, index) => {
+            const Icon = badge.icon;
+            return (
+              <div key={index} className="flex items-center justify-center gap-3 p-4 bg-muted/50 rounded-xl hover:bg-muted/70 transition-colors">
+                <Icon className="w-6 h-6 text-primary" />
+                <span className="text-sm font-medium text-muted-foreground">{badge.name}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

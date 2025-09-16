@@ -1,12 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, TrendingUp, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-marketplace.jpg";
+import hyperspeedBg from "@/assets/hyperspeed-bg.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 hero-gradient opacity-10"></div>
+      {/* Hyperspeed Background */}
+      <div className="absolute inset-0">
+        <img 
+          src={hyperspeedBg} 
+          alt="" 
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80"></div>
+      </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -18,9 +26,11 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Find Powerful 
-              <span className="text-gradient-primary"> AI Agents</span> or 
-              <span className="text-gradient-secondary"> Monetize Yours</span>
+              Where 
+              <span className="text-gradient-primary"> Business</span> 
+              <br />
+              Become 
+              <span className="text-gradient-secondary"> Unstoppable</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
