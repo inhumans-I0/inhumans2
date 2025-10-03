@@ -191,18 +191,31 @@ const MarketplaceGallery = () => {
 
               {/* Action Buttons */}
               <div className="flex gap-2">
-                <Button variant="outline" size="sm" className="flex-1">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1"
+                  onClick={() => window.location.href = '/auth'}
+                >
                   <Play className="w-4 h-4 mr-2" />
                   Try Demo
                 </Button>
-                <Button className="cta-primary flex-1 text-sm">
+                <Button 
+                  className="cta-primary flex-1 text-sm"
+                  onClick={() => window.location.href = '/auth'}
+                >
                   <Plus className="w-4 h-4 mr-2" />
                   Add to Workflow
                 </Button>
               </div>
 
               {/* Host Action */}
-              <Button variant="ghost" size="sm" className="w-full mt-2 text-secondary hover:text-secondary-foreground">
+              <Button 
+                variant="ghost" 
+                size="sm" 
+                className="w-full mt-2 text-secondary hover:text-secondary-foreground"
+                onClick={() => window.location.href = '/auth'}
+              >
                 <Zap className="w-4 h-4 mr-2" />
                 Host This Agent
               </Button>
@@ -212,7 +225,10 @@ const MarketplaceGallery = () => {
 
         {/* Load More */}
         <div className="text-center mt-12">
-          <Button className="cta-primary px-8 py-3">
+          <Button 
+            className="cta-primary px-8 py-3"
+            onClick={() => window.location.href = '/auth'}
+          >
             Load More Agents
           </Button>
         </div>

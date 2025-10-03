@@ -68,7 +68,10 @@ const PersistentCTA = () => {
                 <div className="text-sm font-medium">Ready to automate?</div>
                 <div className="text-xs text-muted-foreground">Explore AI agents now</div>
               </div>
-              <Button className="cta-primary text-sm px-4 py-2">
+              <Button 
+                className="cta-primary text-sm px-4 py-2"
+                onClick={() => window.location.href = '/auth'}
+              >
                 Explore
                 <ArrowRight className="w-3 h-3 ml-1" />
               </Button>
@@ -79,7 +82,10 @@ const PersistentCTA = () => {
                 <div className="text-sm font-medium">Start earning today</div>
                 <div className="text-xs text-muted-foreground">Host your AI agent</div>
               </div>
-              <Button className="cta-accent text-sm px-4 py-2">
+              <Button 
+                className="cta-accent text-sm px-4 py-2"
+                onClick={() => window.location.href = '/auth'}
+              >
                 Host Now
                 <ArrowRight className="w-3 h-3 ml-1" />
               </Button>

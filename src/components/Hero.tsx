@@ -108,12 +108,18 @@ const Hero = () => {
 
             {/* Dual CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <Button className="cta-primary text-lg px-8 py-4">
+              <Button 
+                className="cta-primary text-lg px-8 py-4"
+                onClick={() => window.location.href = '/auth'}
+              >
                 <Users className="w-5 h-5 mr-2" />
                 Explore AI Agents
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button className="cta-accent text-lg px-8 py-4">
+              <Button 
+                className="cta-accent text-lg px-8 py-4"
+                onClick={() => window.location.href = '/auth'}
+              >
                 <TrendingUp className="w-5 h-5 mr-2" />
                 Host & Earn
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -189,10 +195,17 @@ const Hero = () => {
 
                   {/* CTA Buttons */}
                   <div className="flex gap-3">
-                    <Button className="flex-1 cta-primary">
+                    <Button 
+                      className="flex-1 cta-primary"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Try Demo
                     </Button>
-                    <Button variant="outline" className="flex-1">
+                    <Button 
+                      variant="outline" 
+                      className="flex-1"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Learn More
                     </Button>
                   </div>

@@ -123,19 +123,31 @@ const RoleSelector = () => {
               <div className="flex flex-col gap-4">
                 {selectedRole === "hoster" ? (
                   <>
-                    <button className="cta-accent w-full text-lg py-4">
+                    <button 
+                      className="cta-accent w-full text-lg py-4"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Start Hosting Agents
                     </button>
-                    <button className="cta-success w-full">
+                    <button 
+                      className="cta-success w-full"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Learn About Revenue
                     </button>
                   </>
                 ) : (
                   <>
-                    <button className="cta-primary w-full text-lg py-4">
+                    <button 
+                      className="cta-primary w-full text-lg py-4"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Browse AI Agents
                     </button>
-                    <button className="cta-success w-full">
+                    <button 
+                      className="cta-success w-full"
+                      onClick={() => window.location.href = '/auth'}
+                    >
                       Start Free Trial
                     </button>
                   </>
