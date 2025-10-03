@@ -30,7 +30,7 @@ const hosterFAQs = [
     answer: "Earnings vary based on agent quality, pricing, and market demand. Top creators earn $10K-$50K+ monthly. We provide detailed analytics and optimization tips to maximize your revenue potential."
   },
   {
-    question: "What percentage does AgentHub take?",
+    question: "What percentage does Inhumans take?",
     answer: "We take a 20% platform fee on all sales, which covers hosting, payment processing, marketing, customer support, and platform maintenance. You keep 80% of every sale."
   },
   {
@@ -65,7 +65,7 @@ const FAQ = () => {
             Frequently Asked <span className="text-gradient-primary">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Get answers to common questions about using and hosting on AgentHub
+            Get answers to common questions about using and hosting on Inhumans
           </p>
         </div>
 
@@ -130,7 +130,7 @@ const FAQ = () => {
         <div className="mt-16 text-center p-8 bg-gradient-card rounded-2xl border border-border">
           <h3 className="text-xl font-semibold mb-4">Still have questions?</h3>
           <p className="text-muted-foreground mb-6">
-            Our support team is here to help you get started and succeed on AgentHub
+            Our support team is here to help you get started and succeed on Inhumans
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="cta-primary">

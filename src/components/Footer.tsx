@@ -1,4 +1,4 @@
-import { Bot, Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
+import { Puzzle, Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,10 +8,10 @@ const Footer = () => {
           {/* Brand & Description */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
-                <Bot className="w-5 h-5 text-primary-foreground" />
+              <div className="flex items-center justify-center w-8 h-8 bg-gradient-primary rounded-lg">
+                <Puzzle className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold">AgentHub</span>
+              <span className="text-xl font-bold">Inhumans</span>
             </div>
             <p className="text-background/80 leading-relaxed mb-6">
               The leading marketplace connecting businesses with powerful AI agents. 
@@ -123,7 +123,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-background/80">
                 <Mail className="w-4 h-4" />
-                <span className="text-sm">support@agenthub.com</span>
+                <span className="text-sm">support@inhumans.com</span>
               </div>
               <div className="flex items-center gap-3 text-background/80">
                 <Phone className="w-4 h-4" />
@@ -141,7 +141,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-background/60 text-sm mb-4 md:mb-0">
-              © 2024 AgentHub. All rights reserved.
+              © 2024 Inhumans. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-background transition-colors">
