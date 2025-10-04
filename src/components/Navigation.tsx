@@ -32,21 +32,14 @@ const Navigation = () => {
             </a>
           </div>
 
-          {/* Desktop Auth Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button 
-              variant="ghost" 
-              className="text-foreground hover:text-primary"
-              onClick={() => window.location.href = '/auth'}
-            >
-              Login
-            </Button>
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center">
             <Button 
               className="cta-primary"
-              onClick={() => window.location.href = '/auth'}
+              onClick={() => window.location.href = '/waitlist'}
             >
               <Sparkles className="w-4 h-4 mr-2" />
-              Sign Up
+              Join Waitlist
             </Button>
           </div>
 
@@ -87,18 +80,11 @@ const Navigation = () => {
               </a>
               <div className="flex flex-col space-y-2 px-4 pt-4 border-t border-border">
                 <Button 
-                  variant="ghost" 
-                  className="justify-start"
-                  onClick={() => window.location.href = '/auth'}
-                >
-                  Login
-                </Button>
-                <Button 
                   className="cta-primary justify-start"
-                  onClick={() => window.location.href = '/auth'}
+                  onClick={() => window.location.href = '/waitlist'}
                 >
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Sign Up
+                  Join Waitlist
                 </Button>
               </div>
             </div>

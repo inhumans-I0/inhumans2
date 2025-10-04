@@ -22,7 +22,7 @@ export type Database = {
           full_name: string | null
           id: string
           role: string | null
-          user_id: string
+          user_id: string | null
         }
         Insert: {
           company_name?: string | null
@@ -31,7 +31,7 @@ export type Database = {
           full_name?: string | null
           id?: string
           role?: string | null
-          user_id: string
+          user_id?: string | null
         }
         Update: {
           company_name?: string | null
@@ -40,7 +40,7 @@ export type Database = {
           full_name?: string | null
           id?: string
           role?: string | null
-          user_id?: string
+          user_id?: string | null
         }
         Relationships: []
       }

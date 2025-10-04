@@ -195,14 +195,14 @@ const MarketplaceGallery = () => {
                   variant="outline" 
                   size="sm" 
                   className="flex-1"
-                  onClick={() => window.location.href = '/auth'}
+                  onClick={() => window.location.href = '/waitlist'}
                 >
                   <Play className="w-4 h-4 mr-2" />
                   Try Demo
                 </Button>
                 <Button 
                   className="cta-primary flex-1 text-sm"
-                  onClick={() => window.location.href = '/auth'}
+                  onClick={() => window.location.href = '/waitlist'}
                 >
                   <Plus className="w-4 h-4 mr-2" />
                   Add to Workflow
@@ -214,7 +214,7 @@ const MarketplaceGallery = () => {
                 variant="ghost" 
                 size="sm" 
                 className="w-full mt-2 text-secondary hover:text-secondary-foreground"
-                onClick={() => window.location.href = '/auth'}
+                onClick={() => window.location.href = '/waitlist'}
               >
                 <Zap className="w-4 h-4 mr-2" />
                 Host This Agent
@@ -227,7 +227,7 @@ const MarketplaceGallery = () => {
         <div className="text-center mt-12">
           <Button 
             className="cta-primary px-8 py-3"
-            onClick={() => window.location.href = '/auth'}
+            onClick={() => window.location.href = '/waitlist'}
           >
             Load More Agents
           </Button>

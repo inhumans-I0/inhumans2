@@ -125,13 +125,13 @@ const RoleSelector = () => {
                   <>
                     <button 
                       className="cta-accent w-full text-lg py-4"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Start Hosting Agents
                     </button>
                     <button 
                       className="cta-success w-full"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Learn About Revenue
                     </button>
@@ -140,13 +140,13 @@ const RoleSelector = () => {
                   <>
                     <button 
                       className="cta-primary w-full text-lg py-4"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Browse AI Agents
                     </button>
                     <button 
                       className="cta-success w-full"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Start Free Trial
                     </button>

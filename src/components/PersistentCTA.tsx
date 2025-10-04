@@ -70,7 +70,7 @@ const PersistentCTA = () => {
               </div>
               <Button 
                 className="cta-primary text-sm px-4 py-2"
-                onClick={() => window.location.href = '/auth'}
+                onClick={() => window.location.href = '/waitlist'}
               >
                 Explore
                 <ArrowRight className="w-3 h-3 ml-1" />
@@ -84,7 +84,7 @@ const PersistentCTA = () => {
               </div>
               <Button 
                 className="cta-accent text-sm px-4 py-2"
-                onClick={() => window.location.href = '/auth'}
+                onClick={() => window.location.href = '/waitlist'}
               >
                 Host Now
                 <ArrowRight className="w-3 h-3 ml-1" />

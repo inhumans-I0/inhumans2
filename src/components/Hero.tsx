@@ -108,7 +108,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button 
                 className="cta-primary text-lg px-8 py-4"
-                onClick={() => window.location.href = '/auth'}
+                onClick={() => window.location.href = '/waitlist'}
               >
                 <Users className="w-5 h-5 mr-2" />
                 Explore AI Agents
@@ -116,7 +116,7 @@ const Hero = () => {
               </Button>
               <Button 
                 className="cta-accent text-lg px-8 py-4"
-                onClick={() => window.location.href = '/auth'}
+                onClick={() => window.location.href = '/waitlist'}
               >
                 <TrendingUp className="w-5 h-5 mr-2" />
                 Host & Earn
@@ -195,14 +195,14 @@ const Hero = () => {
                   <div className="flex gap-3">
                     <Button 
                       className="flex-1 cta-primary"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Try Demo
                     </Button>
                     <Button 
                       variant="outline" 
                       className="flex-1"
-                      onClick={() => window.location.href = '/auth'}
+                      onClick={() => window.location.href = '/waitlist'}
                     >
                       Learn More
                     </Button>
