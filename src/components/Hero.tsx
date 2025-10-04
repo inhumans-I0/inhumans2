@@ -74,14 +74,12 @@ const Hero = () => {
   const currentAgent = aiAgents[currentAgentIndex];
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Hyperspeed Background */}
-      <div className="absolute inset-0">
-        <img 
-          src={hyperspeedBg} 
-          alt="" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80"></div>
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 animated-gradient-bg">
+        <div className="absolute inset-0 bg-gradient-mesh opacity-30"></div>
+        <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-secondary/20 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
