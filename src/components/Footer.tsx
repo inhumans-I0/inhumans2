@@ -12,7 +12,7 @@ const Footer = () => {
             <img 
               src={celestialLogo} 
               alt="Celestial Frequencies" 
-              className="h-24 object-contain hover:opacity-80 transition-opacity"
+              className="h-48 object-contain hover:opacity-80 transition-opacity"
             />
           </div>
         </div>
