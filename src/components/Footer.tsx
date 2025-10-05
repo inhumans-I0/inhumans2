@@ -5,25 +5,25 @@ const Footer = () => {
   return (
     <>
       {/* Backed By Section - Above Footer */}
-      <div className="bg-background py-12">
+      <div className="bg-background py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-6">
-            <p className="text-muted-foreground text-base font-medium">Backed by</p>
+          <div className="flex flex-col items-center gap-4 sm:gap-6">
+            <p className="text-sm sm:text-base text-muted-foreground font-medium">Backed by</p>
             <img 
               src={celestialLogo} 
               alt="Celestial Frequencies" 
-              className="h-48 object-contain hover:opacity-80 transition-opacity"
+              className="h-24 sm:h-32 lg:h-48 object-contain hover:opacity-80 transition-opacity"
             />
           </div>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
+      <footer className="bg-foreground text-background py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 sm:mb-12">
             {/* Brand & Description */}
-            <div className="md:col-span-1">
+            <div className="sm:col-span-2 lg:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="flex items-center justify-center w-8 h-8 bg-gradient-primary rounded-lg">
                   <Puzzle className="w-5 h-5 text-primary-foreground" />

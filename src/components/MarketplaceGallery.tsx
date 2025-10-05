@@ -105,13 +105,13 @@ const MarketplaceGallery = () => {
   };
 
   return (
-    <section className="py-20" id="marketplace">
+    <section className="py-12 sm:py-16 lg:py-20" id="marketplace">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             AI Agent <span className="text-gradient-primary">Marketplace</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
             Discover powerful AI agents that transform how you work. Try demos, 
             integrate seamlessly, and start automating today.
           </p>
@@ -128,9 +128,9 @@ const MarketplaceGallery = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <div className="flex gap-2 items-center">
-            <Filter className="w-5 h-5 text-muted-foreground" />
-            <div className="flex gap-2 overflow-x-auto">
+          <div className="flex gap-2 items-center overflow-x-auto">
+            <Filter className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+            <div className="flex gap-2">
               {categories.map(category => (
                 <Button
                   key={category}

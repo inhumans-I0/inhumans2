@@ -60,20 +60,20 @@ const RoleSelector = () => {
   const selectedRoleData = roles.find(role => role.id === selectedRole);
 
   return (
-    <section className="py-20 bg-muted/30" id="roles">
+    <section className="py-12 sm:py-16 lg:py-20 bg-muted/30" id="roles">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Choose Your <span className="text-gradient-primary">Path</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
             Whether you're looking to adopt AI or monetize your AI expertise, 
             we have the perfect solution for your needs.
           </p>
         </div>
 
         {/* Role Cards */}
-        <div className="grid md:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {roles.map((role) => {
             const Icon = role.icon;
             const isActive = selectedRole === role.id;
@@ -90,10 +90,10 @@ const RoleSelector = () => {
                       ? 'bg-primary text-primary-foreground shadow-primary' 
                       : 'bg-muted text-muted-foreground'
                   }`}>
-                    <Icon className="w-8 h-8" />
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{role.title}</h3>
-                  <p className="text-sm text-muted-foreground">{role.description}</p>
+                  <h3 className="text-sm sm:text-base lg:text-lg font-semibold mb-2">{role.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">{role.description}</p>
                 </div>
               </div>
             );

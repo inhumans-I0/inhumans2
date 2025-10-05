@@ -91,7 +91,7 @@ const Hero = () => {
               AI-Powered Marketplace
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Where 
               <span className="text-gradient-primary"> Business</span> 
               <br />
@@ -99,50 +99,50 @@ const Hero = () => {
               <span className="text-gradient-secondary"> Unstoppable</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed">
               Connect businesses with game-changing AI agents. Automate workflows, 
               boost productivity, or earn by hosting your AI solutions in our trusted marketplace.
             </p>
 
             {/* Dual CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
               <Button 
-                className="cta-primary text-lg px-8 py-4"
+                className="cta-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
                 onClick={() => window.location.href = '/waitlist'}
               >
-                <Users className="w-5 h-5 mr-2" />
+                <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Explore AI Agents
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
               </Button>
               <Button 
-                className="cta-accent text-lg px-8 py-4"
+                className="cta-accent text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
                 onClick={() => window.location.href = '/waitlist'}
               >
-                <TrendingUp className="w-5 h-5 mr-2" />
+                <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Host & Earn
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
               </Button>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-border">
               <div>
-                <div className="text-2xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">AI Agents</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary">500+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">AI Agents</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-secondary">10K+</div>
-                <div className="text-sm text-muted-foreground">Businesses</div>
+                <div className="text-xl sm:text-2xl font-bold text-secondary">10K+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Businesses</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-success">$2M+</div>
-                <div className="text-sm text-muted-foreground">Earned</div>
+                <div className="text-xl sm:text-2xl font-bold text-success">$2M+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Earned</div>
               </div>
             </div>
           </div>
 
           {/* Right - AI Agent Showcase */}
-          <div className="animate-slide-in-right">
+          <div className="animate-slide-in-right hidden lg:block">
             <div className="relative h-[500px] flex items-center justify-center">
               {/* Animated Background Glow */}
               <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
