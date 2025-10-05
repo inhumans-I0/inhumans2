@@ -1,4 +1,5 @@
 import { Puzzle, Twitter, Linkedin, Github, Mail, Phone, MapPin } from "lucide-react";
+import celestialLogo from "@/assets/celestial-frequencies-logo.png";
 
 const Footer = () => {
   return (
@@ -134,6 +135,18 @@ const Footer = () => {
                 <span className="text-sm">San Francisco, CA</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Backed By Section */}
+        <div className="border-t border-background/20 pt-8 pb-8">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-background/60 text-sm font-medium">Backed by</p>
+            <img 
+              src={celestialLogo} 
+              alt="Celestial Frequencies" 
+              className="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
           </div>
         </div>
 
