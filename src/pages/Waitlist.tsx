@@ -58,9 +58,12 @@ const Waitlist = () => {
             variant: "destructive",
           });
         } else {
+          // Log actual error for debugging without exposing to user
+          console.error('Waitlist insertion error:', error);
+          
           toast({
-            title: "Error",
-            description: error.message,
+            title: "Unable to join waitlist",
+            description: "Something went wrong. Please try again later or contact support if the problem persists.",
             variant: "destructive",
           });
         }
